@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="bg-white text-gray-900 px-6 py-3 sticky top-0 border-b border-gray-300 z-50">
+    <nav className="bg-white text-gray-900 px-6 py-3 border-b border-gray-300 ">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-lg font-bold">QUIZZY</div>
@@ -10,7 +10,7 @@ export default function Navbar() {
         {/* Menu */}
         <ul className="flex items-center space-x-6">
           <li>
-            <Link to="#" className="hover:text-yellow-400">
+            <Link to="/"className="hover:text-yellow-400">
               Home
             </Link>
           </li>
@@ -23,7 +23,7 @@ export default function Navbar() {
             <button className="flex items-center space-x-1 hover:text-yellow-400">
               Services
               <span className="inline-block transform group-hover:rotate-180 transition duration-200">
-                ▼
+                ⇩
               </span>
             </button>
 

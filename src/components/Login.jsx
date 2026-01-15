@@ -1,6 +1,6 @@
 export default function Login() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4 pt-20">
       {/* Welcome Section */}
       <div className="mb-10 text-center">
         <h1 className="text-3xl font-bold text-purple-700">
@@ -20,12 +20,12 @@ export default function Login() {
               htmlFor="email"
               className="block text-sm font-medium text-gray-700"
             >
-              Email
+              Username
             </label>
             <input
-              type="email"
-              id="email"
-              placeholder="Enter your email"
+              type="text"
+              id="text"
+              placeholder="Username"
               className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500 outline-none"
             />
           </div>
@@ -44,14 +44,18 @@ export default function Login() {
               className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500 outline-none"
             />
           </div>
+
           <div className="flex items-center justify-between">
-            <div class="flex items-center">
+            <div className="flex items-center">
               <input
                 id="remember"
                 type="checkbox"
-                class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                className="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
               />
-              <label for="remember" class="ml-2 block text-sm text-gray-700">
+              <label
+                htmlFor="remember"
+                className="ml-2 block text-sm text-gray-700"
+              >
                 Remember me
               </label>
             </div>
@@ -70,10 +74,14 @@ export default function Login() {
           </button>
         </form>
       </div>
+
+      {/* Sign Up Section */}
       <div className="text-center mt-10">
         <h1 className="text-2xl font-bold text-purple-700">New to QUIZZY?</h1>
         <p className="text-lg text-gray-700">
-          <a href="#" className="hover:underline">Sign Up Now</a>
+          <a href="#" className="hover:underline">
+            Sign Up Now
+          </a>
         </p>
       </div>
     </div>
